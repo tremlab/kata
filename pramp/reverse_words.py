@@ -4,12 +4,11 @@ def reverseWords(arr):
 
     for char in arr:
 
-      if char == "  ":
-          words.append(word)
-          word = []
-      else:
-          word.append(char)
-
+        if char == "  ":
+            words.append(word)
+            word = []
+        else:
+            word.append(char)
 
     words.append(word)
 
