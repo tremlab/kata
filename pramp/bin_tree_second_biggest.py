@@ -9,23 +9,25 @@ class Node:
 
 # A binary search tree
 
+
 class BinarySearchTree:
 
   # Constructor to create a new BST
     def __init__(self):
-      self.root = None
-#### my code:
+        self.root = None
+#### my code: given number, find vlaue in tree that is less than num,
+# but bigest value in tree.
 
     def findLargestSmallerKey(self, num):
-      largest_value = 0
-      current = self.root
-    
-    while current:
-      val = current.key
-      if num  <= val:
-        current = current.left
-      else:
-        largest_value = current.key
-        current = current.right
-        
-    return largest_value
+        largest_value = 0
+        current = self.root
+
+        while current:
+            val = current.key
+            if num <= val:
+                current = current.left
+            else:
+                largest_value = current.key
+                current = current.right
+
+        return largest_value
